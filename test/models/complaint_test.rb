@@ -7,5 +7,6 @@ class ComplaintTest < ActiveSupport::TestCase
 
   test "complaint must belong to someone" do
     assert true
+  end
 
 end

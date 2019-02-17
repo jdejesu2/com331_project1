@@ -7,4 +7,5 @@ class ReporterTest < ActiveSupport::TestCase
 
   test "reports must have information entered" do
     assert true
+  end 
 end
