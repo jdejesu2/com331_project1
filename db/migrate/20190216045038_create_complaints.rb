@@ -5,6 +5,7 @@ class CreateComplaints < ActiveRecord::Migration[5.2]
       t.string :location
       t.string :type
       t.text :description
+      #t.index ["reporter_id"]
 
       t.timestamps
     end

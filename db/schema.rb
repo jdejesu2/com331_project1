@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 2019_02_16_050100) do
     t.string "location"
     t.string "type"
     t.text "description"
+    t.index ["reporter_id"]
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
