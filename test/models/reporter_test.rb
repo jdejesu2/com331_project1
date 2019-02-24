@@ -5,7 +5,13 @@ class ReporterTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-  test "reports must have information entered" do
-    assert true
+  test "reports fields are not empty" do
+    reporter = Reporter.new
+    assert reporter.valid?
+    assert reporter.errors[:first_name].any?
+    assert reporter.errors[:last_name].any?
+    assert reporter.errors[:a_number].any?
+    assert reporter.errors[:school_email].any?
   end
+
 end
