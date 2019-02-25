@@ -3,17 +3,20 @@
 bathroom:
   date: 2019-01-15 12:50:38
   location: Pritzker Science Center
-  type: Maintenance
+  department: Maintenance
   description: The bathroom on the third floor for the women is broken
+  #reporter_id: 1
 
 table:
   date: 2019-01-20 13:50:38
   location: Perlstein Hall
-  type: Maintenance
+  department: Maintenance
   description: The table in Room 104 is broken
+  #reporter_id: 2
 
 printer:
   date: 2019-02-14 12:50:38
   location: McCormick Student Village
-  type: Technology
+  department: Technology
   description: The printer is out of toner
+  #reporter_id: 3
