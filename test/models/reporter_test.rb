@@ -5,13 +5,13 @@ class ReporterTest < ActiveSupport::TestCase
   #   assert true
   # end
 
+  setup do
+    @Wenwen = reporters(:Wenwen)
+  end
+
   test "reports fields are not empty" do
     reporter = Reporter.new
-    assert reporter.valid?
-    assert reporter.errors[:first_name].any?
-    assert reporter.errors[:last_name].any?
-    assert reporter.errors[:a_number].any?
-    assert reporter.errors[:school_email].any?
+    assert @Wenwen.valid?
   end
 
 end
