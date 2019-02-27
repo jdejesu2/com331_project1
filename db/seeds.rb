@@ -12,51 +12,56 @@ Student.destroy_all
 
 #example seed data, but isn't complete!!
 
-
-@bathroom = Complaint.create(
-  date: 2019-01-15 12:50:38,
-  location: 'Pritzker Science Center',
-  type: 'Maintenance',
-  description: 'The bathroom on the third floor for the women is broken',
-  reporters: 'Wenwen'
+@Wenwen = Reporter.create(
+  first_name: "Wenwen",
+  last_name: "Xie",
+  a_number: 12345678,
+  school_email: "wenwenxie@hawk.iit.edu",
 )
 
-@table = Complaint.create(
-  date: 2019-01-20 13:50:38,
-  location: 'Perlstein Hall',
-  type: 'Maintenance',
-  description: 'The table in Room 104 is broken',
-  reporters: 'Jiayu'
+@Jiayu = Reporter.create(
+  first_name: "JiaYu",
+  last_name: "Huang",
+  a_number: 01234567,
+  school_email: "jiayuhuang@hawk.iit.edu",
+  complaints: [@table]
 )
 
-@printer = Complaint.create (
-  date: 2019-02-14 12:50:38,
-  location: 'McCormick Student Village',
-  type: 'Technology',
-  description: 'The printer is out of toner',
-  reporters: 'Jessica'
+@Jessica = Reporter.create(
+  first_name: "Jessica",
+  last_name: "DeJesus",
+  a_number: 01234568,
+  school_email: "jessicadejesus@hawk.iit.edu",
+  complaints: [@printer]
 )
 
-Reporters.create(
+
+Complaints.create(
   {
-    first_name: "Wenwen",
-    last_name: "Xie",
-    a_number: 12345678,
-    school_email: "wenwenxie@hawk.iit.edu",
-    complaints: [@bathroom]
+    ##need a title for complaints!
+    ##need to change date type
+    date: 2019-01-15 12:50:38,
+    location: 'Pritzker Science Center',
+    department: 'Maintenance',
+    description: 'The bathroom on the third floor for the women is broken',
+    reporters: 'Wenwen'
   },
   {
-    first_name: "JiaYu",
-    last_name: "Huang",
-    a_number: 01234567,
-    school_email: "jiayuhuang@hawk.iit.edu",
-    complaints: [@table]
+    ##need a title for complaints!
+    ##need to change date type
+    date: 2019-01-20 13:50:38,
+    location: 'Perlstein Hall',
+    department: 'Maintenance',
+    description: 'The table in Room 104 is broken',
+    reporters: 'Jiayu'
   },
   {
-    first_name: "Jessica",
-    last_name: "DeJesus",
-    a_number: 01234568,
-    school_email: "jessicadejesus@hawk.iit.edu",
-    complaints: [@printer]
+    ##need a title for complaints!
+    ##need to change date type
+    date: 2019-02-14 12:50:38,
+    location: 'McCormick Student Village',
+    department: 'Technology',
+    description: 'The printer is out of toner',
+    reporters: 'Jessica'
   }
 )
