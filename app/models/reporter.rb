@@ -5,6 +5,8 @@ class Reporter < ApplicationRecord
 
   validates :a_number, uniqueness: true
 
+  validates :school_email, uniqueness: true
+
   validates :school_email,
   format: {
     with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i,
