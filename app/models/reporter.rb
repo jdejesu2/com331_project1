@@ -10,4 +10,5 @@ class Reporter < ApplicationRecord
     with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i,
     message: 'must be a URL of GIF, JPG, or PNG image.'
   }
+  
 end
