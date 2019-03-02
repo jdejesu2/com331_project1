@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_25_204440) do
+ActiveRecord::Schema.define(version: 2019_03_02_000032) do
 
   create_table "complaints", force: :cascade do |t|
-    t.datetime "date"
+    t.integer "date"
     t.string "location"
     t.string "department"
     t.text "description"
