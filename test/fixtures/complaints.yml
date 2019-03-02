@@ -1,22 +1,24 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 bathroom:
-  date: 2019-01-15 12:50:38
+  date: 20190120
   location: Pritzker Science Center
   department: Maintenance
   description: The bathroom on the third floor for the women is broken
-  #reporter_id: 1
+  #reporter: Wenwen
 
 table:
-  date: 2019-01-20 13:50:38
+  date: 20190120
   location: Perlstein Hall
   department: Maintenance
   description: The table in Room 104 is broken
   #reporter_id: 2
+  #reporter: JiaYu
 
 printer:
-  date: 2019-02-14 12:50:38
+  date: 20190214
   location: McCormick Student Village
   department: Technology
   description: The printer is out of toner
   #reporter_id: 3
+  #reporter: Jessica

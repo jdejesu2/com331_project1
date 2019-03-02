@@ -40,7 +40,7 @@ Complaints.create(
   {
     ##need a title for complaints!
     ##need to change date type
-    date: 2019-01-15 12:50:38,
+    date: 2019-01-15,
     location: 'Pritzker Science Center',
     department: 'Maintenance',
     description: 'The bathroom on the third floor for the women is broken',
@@ -49,7 +49,7 @@ Complaints.create(
   {
     ##need a title for complaints!
     ##need to change date type
-    date: 2019-01-20 13:50:38,
+    date: 2019-01-20,
     location: 'Perlstein Hall',
     department: 'Maintenance',
     description: 'The table in Room 104 is broken',
@@ -58,7 +58,7 @@ Complaints.create(
   {
     ##need a title for complaints!
     ##need to change date type
-    date: 2019-02-14 12:50:38,
+    date: 2019-02-14,
     location: 'McCormick Student Village',
     department: 'Technology',
     description: 'The printer is out of toner',
