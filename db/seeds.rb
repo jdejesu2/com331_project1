@@ -40,27 +40,27 @@ Reporter.destroy_all
     ##need a title for complaints!
     ##need to change date type
     date: 20190115,
-    location: 'Pritzker Science Center',
+    location: 'Pritzker',
     department: 'Maintenance',
     description: 'The bathroom on the third floor for the women is broken',
-    #reporters: 'Wenwen'
+    reporter_id: 1
 )
 
 @table = Complaint.create(
     ##need a title for complaints!
     ##need to change date type
     date: 20190120,
-    location: 'Perlstein Hall',
+    location: 'Perlstein',
     department: 'Maintenance',
     description: 'The table in Room 104 is broken',
-    #reporters: 'Jiayu'
+    reporter_id: 2
 )
 @printer = Complaint.create(
     ##need a title for complaints!
     ##need to change date type
     date: 20190214,
-    location: 'McCormick Student Village',
+    location: 'MSV',
     department: 'Technology',
     description: 'The printer is out of toner',
-    #reporters: 'Jessica'
+    reporter_id: 3
 )

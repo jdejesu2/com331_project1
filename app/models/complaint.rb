@@ -1,7 +1,7 @@
 class Complaint < ApplicationRecord
   belongs_to :reporters
 
-  validates :date, :location, :department, :description, presence: true
+  validates :date, :location, :department, :description, :reporter_id, presence: true
 
   validates :department, inclusion: { in: %w(Maintenance Technology),
     message: "You did not enter a correct department" }

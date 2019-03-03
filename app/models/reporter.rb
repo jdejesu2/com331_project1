@@ -10,7 +10,7 @@ class Reporter < ApplicationRecord
   validates :school_email,
   format: {
     with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i,
-    message: 'must be a URL of GIF, JPG, or PNG image.'
+    message: 'must be in the email format.'
   }
 
 end

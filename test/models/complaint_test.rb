@@ -11,7 +11,7 @@ class ComplaintTest < ActiveSupport::TestCase
 
   test "complaint fields must not be empty" do
     complaint = Complaint.new
-    assert @bathroom.invalid?
+    assert @bathroom.valid?
   end
 
 
