@@ -24,7 +24,7 @@ Reporter.destroy_all
   last_name: "Huang",
   a_number: 21234567,
   school_email: "jiayuhuang@hawk.iit.edu",
-  complaints: [@table]
+  #complaints: [@table]
 )
 
 @Jessica = Reporter.create(
@@ -32,36 +32,35 @@ Reporter.destroy_all
   last_name: "DeJesus",
   a_number: 21234568,
   school_email: "jessicadejesus@hawk.iit.edu",
-  complaints: [@printer]
+  #complaints: [@printer]
 )
 
 
-Complaints.create(
-  {
+@bathroom = Complaint.create(
     ##need a title for complaints!
     ##need to change date type
     date: 20190115,
     location: 'Pritzker Science Center',
     department: 'Maintenance',
     description: 'The bathroom on the third floor for the women is broken',
-    reporters: 'Wenwen'
-  },
-  {
+    #reporters: 'Wenwen'
+)
+
+@table = Complaint.create(
     ##need a title for complaints!
     ##need to change date type
     date: 20190120,
     location: 'Perlstein Hall',
     department: 'Maintenance',
     description: 'The table in Room 104 is broken',
-    reporters: 'Jiayu'
-  },
-  {
+    #reporters: 'Jiayu'
+)
+@printer = Complaint.create(
     ##need a title for complaints!
     ##need to change date type
     date: 20190214,
     location: 'McCormick Student Village',
     department: 'Technology',
     description: 'The printer is out of toner',
-    reporters: 'Jessica'
-  }
+    #reporters: 'Jessica'
 )
