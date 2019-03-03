@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ComplaintsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @complaint = complaints(:one)
+    @complaint = complaints(:bathroom)
   end
 
   test "should get index" do
@@ -17,7 +17,7 @@ class ComplaintsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create complaint" do
     assert_difference('Complaint.count') do
-      post complaints_url, params: { complaint: {  } }
+      post complaints_url, params: { complaint: { date: @complaint.date, location: @complaint.location, department: @complaint.department, description: @complaint.description } }
     end
 
     assert_redirected_to complaint_url(Complaint.last)
@@ -34,7 +34,7 @@ class ComplaintsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update complaint" do
-    patch complaint_url(@complaint), params: { complaint: {  } }
+    patch complaint_url(@complaint), params: { complaint: { date: @complaint.date, location: @complaint.location, department: @complaint.department, description: @complaint.description } }
     assert_redirected_to complaint_url(@complaint)
   end
 
