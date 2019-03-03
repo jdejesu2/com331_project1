@@ -9,6 +9,6 @@ class Complaint < ApplicationRecord
   validates :location, inclusion: {
     in: %w(Stuart Keating Kaplan Pritzker Engineering Alumni  Hermann MSV SSV MTCC
       Perlstein Wishnick Siegel Galvin Crown IIT-Tower),
-      message: "You did not enter a correct department"  }
+      message: "You did not enter a correct location"  }
 
 end
