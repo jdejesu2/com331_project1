@@ -8,7 +8,7 @@
 
 #delete everythind that is in the database
 Complaint.destroy_all
-Student.destroy_all
+Reporter.destroy_all
 
 #example seed data, but isn't complete!!
 
@@ -22,7 +22,7 @@ Student.destroy_all
 @Jiayu = Reporter.create(
   first_name: "JiaYu",
   last_name: "Huang",
-  a_number: 01234567,
+  a_number: 21234567,
   school_email: "jiayuhuang@hawk.iit.edu",
   complaints: [@table]
 )
@@ -30,7 +30,7 @@ Student.destroy_all
 @Jessica = Reporter.create(
   first_name: "Jessica",
   last_name: "DeJesus",
-  a_number: 01234568,
+  a_number: 21234568,
   school_email: "jessicadejesus@hawk.iit.edu",
   complaints: [@printer]
 )
@@ -40,7 +40,7 @@ Complaints.create(
   {
     ##need a title for complaints!
     ##need to change date type
-    date: 2019-01-15,
+    date: 20190115,
     location: 'Pritzker Science Center',
     department: 'Maintenance',
     description: 'The bathroom on the third floor for the women is broken',
@@ -49,7 +49,7 @@ Complaints.create(
   {
     ##need a title for complaints!
     ##need to change date type
-    date: 2019-01-20,
+    date: 20190120,
     location: 'Perlstein Hall',
     department: 'Maintenance',
     description: 'The table in Room 104 is broken',
@@ -58,7 +58,7 @@ Complaints.create(
   {
     ##need a title for complaints!
     ##need to change date type
-    date: 2019-02-14,
+    date: 20190214,
     location: 'McCormick Student Village',
     department: 'Technology',
     description: 'The printer is out of toner',
