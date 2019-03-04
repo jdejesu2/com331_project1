@@ -2,21 +2,21 @@
 
 bathroom:
   date: 20071119 #<%Y%m%d>
-  location: Pritzker
-  department: Maintenance
-  description: The bathroom on the third floor for the women is broken
-  reporter_id: 1
+  location: 'Pritzker'
+  department: 'Maintenance'
+  description: 'The bathroom on the third floor for the women is broken'
+  reporters: Wenwen
 
 table:
   date: 20071119 #<%Y%m%d>
-  location: Perlstein
-  department: Maintenance
-  description: The table in Room 104 is broken
-  reporter_id: 2
+  location: 'Perlstein'
+  department: 'Maintenance'
+  description: 'The table in Room 104 is broken'
+  reporters: Jiayu
 
 printer:
   date: 20071119 #<%Y%m%d>
-  location: MSV
-  department: Technology
-  description: The printer is out of toner
-  reporter_id: 3
+  location: 'MSV'
+  department: 'Technology'
+  description: 'The printer is out of toner'
+  reporters: Jessica
