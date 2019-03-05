@@ -13,54 +13,30 @@ Reporter.destroy_all
 #example seed data, but isn't complete!!
 
 @Wenwen = Reporter.create(
-  first_name: "Wenwen",
-  last_name: "Xie",
+  first_name: 'Wenwen',
+  last_name: 'Xie',
   a_number: 12345678,
-  school_email: "wenwenxie@hawk.iit.edu",
+  school_email: 'wenwenxie@hawk.iit.edu',
 )
 
 @Jiayu = Reporter.create(
-  first_name: "JiaYu",
-  last_name: "Huang",
+  first_name: 'JiaYu',
+  last_name: 'Huang',
   a_number: 21234567,
-  school_email: "jiayuhuang@hawk.iit.edu",
-  #complaints: [@table]
+  school_email: 'jiayuhuang@hawk.iit.edu',
 )
 
 @Jessica = Reporter.create(
-  first_name: "Jessica",
-  last_name: "DeJesus",
+  first_name: 'Jessica',
+  last_name: 'DeJesus',
   a_number: 21234568,
-  school_email: "jessicadejesus@hawk.iit.edu",
-  #complaints: [@printer]
+  school_email: 'jessicadejesus@hawk.iit.edu',
 )
 
-
-@bathroom = Complaint.create(
-    ##need a title for complaints!
-    ##need to change date type
-    date: 20190115,
-    location: 'Pritzker',
-    department: 'Maintenance',
-    description: 'The bathroom on the third floor for the women is broken',
-    reporter_id: 1
-)
-
-@table = Complaint.create(
-    ##need a title for complaints!
-    ##need to change date type
-    date: 20190120,
-    location: 'Perlstein',
-    department: 'Maintenance',
-    description: 'The table in Room 104 is broken',
-    reporter_id: 2
-)
-@printer = Complaint.create(
-    ##need a title for complaints!
-    ##need to change date type
-    date: 20190214,
-    location: 'MSV',
-    department: 'Technology',
-    description: 'The printer is out of toner',
-    reporter_id: 3
+Complaint.create(
+  [
+    { date: 20190115, location: 'Pritzker', department: 'Maintenance', description: 'The bathroom on the third floor for the women is broken', reporter: @Wenwen },
+    { date: 20190120, location: 'Perlstein', department: 'Maintenance', description: 'The table in Room 104 is broken', reporter: @Jiayu },
+    { date: 20190214, location: 'MSV', department: 'Technology', description: 'The printer is out of toner', reporter: @Jessica }
+  ]
 )
