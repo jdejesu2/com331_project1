@@ -1,5 +1,5 @@
 class Complaint < ApplicationRecord
-  belongs_to :reporters
+  belongs_to :reporter
 
   validates :date, :location, :department, :description, :reporter_id, presence: true
 
