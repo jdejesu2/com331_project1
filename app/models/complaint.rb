@@ -12,7 +12,7 @@ class Complaint < ApplicationRecord
       message: "You did not enter a correct location"  }
 
   def complaint_number= (a_number)
-    self.complaint = Complaint.find_or_create_by(a_number: a_number)
+    self.complaint = Complaint.create_by(a_number: a_number)
   end
 
   def complaint_number
