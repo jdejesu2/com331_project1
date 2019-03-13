@@ -2,6 +2,7 @@
 
 = render 'form'
 
-= link_to 'Show', @complaint
-\|
-= link_to 'Back', complaints_path
+%footer
+ %ul.controls
+  %li= link_to 'Show', @complaint
+  %li= link_to 'Back', complaints_path
