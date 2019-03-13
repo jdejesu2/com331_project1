@@ -11,12 +11,12 @@ class Complaint < ApplicationRecord
       Perlstein Wishnick Siegel Galvin Crown IIT-Tower),
       message: "You did not enter a correct location"  }
 
-  def complaint_number= (a_number)
-    self.complaint = Complaint.create_by(a_number: a_number)
+  def person_number=(a_number)
+    self.reporter = Reporter.find_or_create_by(a_number: a_number)
   end
 
-  def complaint_number
-    self.complaint ? self.complaint.a_number : nil
+  def person_number
+    self.reporter ? self.reporter.a_number : nil
   end
 
 end
