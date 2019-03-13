@@ -6,5 +6,19 @@
         - @complaint.errors.full_messages.each do |message|
           %li= message
 
-  .actions
-    = f.submit 'Save'
+  %ol.inputs
+    %li
+      = f.label :date
+      = f.date_field :date
+    %li
+      = f.label :location
+      = f.text_field :location
+    %li
+      = f.label :department
+      = f.text_field :department
+    %li
+      = f.label :description
+      = f.text_area :description
+
+    %li.actions
+      = f.submit 'Save'

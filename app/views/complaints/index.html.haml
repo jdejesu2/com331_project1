@@ -1,11 +1,12 @@
-%h1 Listing complaints
 
-    - @complaints.each do |complaint|
-      %tr
-        %td= link_to 'Show', complaint
-        %td= link_to 'Edit', edit_complaint_path(complaint)
-        %td= link_to 'Destroy', complaint, method: :delete, data: { confirm: 'Are you sure?' }
+%header
+  %p= link_to 'New Complaint', new_complaint_path
+  %h2 Newest Complaints
 
-%br
-
-= link_to 'New Complaint', new_complaint_path
+%ul.complaints
+  - @complaints.each do |complaint|
+    %li
+      %article
+        %h3= link_to complaint.description, complaint
+        %ul.controls
+          %li= link_to 'Show', complaint

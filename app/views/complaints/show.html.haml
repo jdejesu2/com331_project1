@@ -1,6 +1,11 @@
 %p#notice= notice
 
+%article
+  %h3= @complaint.reporter_id
+  %p.byline= @complaint.date
+  %p.byline= @complaint.location
+  %p.byline= @complaint.department
+  %p.byline= @complaint.description
 
-= link_to 'Edit', edit_complaint_path(@complaint)
-\|
+%footer
 = link_to 'Back', complaints_path
