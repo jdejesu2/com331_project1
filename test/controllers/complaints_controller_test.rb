@@ -17,7 +17,7 @@ class ComplaintsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create complaint" do
     assert_difference('Complaint.count') do
-      post complaints_url, params: { complaint: { date: @complaint.date, location: @complaint.location, department: @complaint.department, description: @complaint.description, complaint_number: @complaint.reporter.a_number } }
+      post complaints_url, params: { complaint: { date: @complaint.date, location: @complaint.location, department: @complaint.department, description: @complaint.description, person_number: @complaint.reporter.a_number } }
     end
 
     assert_redirected_to complaint_url(Complaint.last)
@@ -34,7 +34,7 @@ class ComplaintsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update complaint" do
-    patch complaint_url(@complaint), params: { complaint: { date: @complaint.date, location: @complaint.location, department: @complaint.department, description: @complaint.description, complaint_number: @complaint.reporter.a_number } }
+    patch complaint_url(@complaint), params: { complaint: { date: @complaint.date, location: @complaint.location, department: @complaint.department, description: @complaint.description, person_number: @complaint.reporter.a_number } }
     assert_redirected_to complaint_url(@complaint)
   end
 
