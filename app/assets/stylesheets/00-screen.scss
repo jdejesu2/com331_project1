@@ -7,3 +7,25 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+// Site-wide variables
+$primary_color: #222233;
+$base_font_size: 24px;
+
+// Site-wide functions
+@function px-to-em($target,$context:$base_font_size) {
+  @return ($target / $context) * 1em;
+}
+
+
+/* Base Styles (HTML Selectors) */
+
+
+
+/* Layout Styles (Usually Landmark ID Selectors) */
+
+
+/* Modular Styles (Repeating Class Selectors) */
+
+
+/* State Styles (JavaScript-Dependent Styles, Media Queries) */
