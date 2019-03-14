@@ -9,7 +9,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 // Site-wide variables
-$primary_color: #222233;
+$primary_color: #191970;
 $base_font_size: 24px;
 
 // Site-wide functions
@@ -19,7 +19,24 @@ $base_font_size: 24px;
 
 
 /* Base Styles (HTML Selectors) */
+html {
+  font-size: px-to-em($base_font_size,16px); /* 24 / 16 = */
+  color: $primary_color;
+  line-height: px-to-em(28px);
+  background-color: #DCDCDC;
+}
 
+body {
+  padding-right: 1.22em;
+  padding-left: 1.22em;
+}
+
+h1 {
+  font-size: px-to-em(48px);
+  line-height: px-to-em(84px,48px); /* 28 * 2 = 48 */
+  //background-color: black;
+  //color: white;
+}
 
 
 /* Layout Styles (Usually Landmark ID Selectors) */
