@@ -27,16 +27,61 @@ html {
 }
 
 body {
-  padding-right: 1.22em;
-  padding-left: 1.22em;
+  padding: 5%
 }
 
 h1 {
   font-size: px-to-em(48px);
-  line-height: px-to-em(84px,48px); /* 28 * 2 = 48 */
+  line-height: px-to-em(64px,48px); /* 28 * 2 = 48 */
   //background-color: black;
   //color: white;
 }
+
+h2 {
+  font-size: px-to-em(28px);
+  line-height: px-to-em(30px,28px);
+  padding-top: px-to-em(16px,18px);
+  padding-bottom: px-to-em(16px,18px);
+}
+
+h3 {
+  font-size: px-to-em(20px);
+  line-height: px-to-em(22px,20px);
+}
+
+
+input {
+  background: white;
+  box-sizing: border-box;
+  line-height: px-to-em(24px,18px);
+  padding: px-to-em(16px,18px);
+
+}
+
+label,
+input {
+  display: block;
+}
+
+form li {
+  padding-bottom: px-to-em(16px,18px);
+  line-height: px-to-em(24px,18px);
+  list-style: none;
+}
+
+ul {
+  padding-bottom: px-to-em(16px,18px);
+  line-height: px-to-em(24px,18px);
+  list-style: none;
+}
+
+
+footer {
+  line-height: px-to-em(28px);
+  text-align: right;
+  font-weight: bold;
+}
+
 
 
 /* Layout Styles (Usually Landmark ID Selectors) */
