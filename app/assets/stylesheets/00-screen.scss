@@ -45,6 +45,7 @@ h2 {
 }
 
 h3 {
+  font-weight: bold;
   font-size: px-to-em(20px);
   line-height: px-to-em(22px,20px);
 }
@@ -55,7 +56,6 @@ input {
   box-sizing: border-box;
   line-height: px-to-em(24px,18px);
   padding: px-to-em(16px,18px);
-
 }
 
 label,
@@ -70,11 +70,31 @@ form li {
 }
 
 ul {
-  padding-bottom: px-to-em(16px,18px);
   line-height: px-to-em(24px,18px);
   list-style: none;
 }
 
+li {
+  padding-left: 2%;
+  padding-top: 2%;
+  line-height: px-to-em(24px,18px);
+  background-color: #696969;
+  border-radius: px-to-em(10px);
+  margin: px-to-em(5px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul.info{
+  padding-left: 3%;
+  font-size: px-to-em(18px);
+}
+
+
+ul.controls{
+  text-align: left;
+
+}
 
 footer {
   line-height: px-to-em(28px);
@@ -91,3 +111,14 @@ footer {
 
 
 /* State Styles (JavaScript-Dependent Styles, Media Queries) */
+
+@media screen and (min-width: 380px) {
+
+
+}
+@media screen and (min-width: 540px) {
+
+}
+@media screen and (min-width: 920px) {
+
+}
