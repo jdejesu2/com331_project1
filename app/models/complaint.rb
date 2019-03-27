@@ -12,7 +12,7 @@ class Complaint < ApplicationRecord
       message: "You did not enter a correct location"  }
 
   def person_number=(a_number)
-    self.reporter = Reporter.find_or_create_by(a_number: a_number)
+    self.reporter = Reporter.find_by(a_number: a_number)
   end
 
   def person_number
