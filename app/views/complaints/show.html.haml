@@ -1,11 +1,11 @@
 %p#notice= notice
 
 %article
-  %h3= @complaint.reporter_id
-  %p.byline= @complaint.date
-  %p.byline= @complaint.location
-  %p.byline= @complaint.department
-  %p.byline= @complaint.description
+  %p.byline= "Report Number: #{@complaint.reporter_id}"
+  %p.byline= "Date: #{@complaint.date}"
+  %p.byline= "Location: #{@complaint.location}"
+  %p.byline= "Department: #{@complaint.department}"
+  %p.byline= "Description: #{@complaint.description}"
 
 %footer
   %ul.controls
