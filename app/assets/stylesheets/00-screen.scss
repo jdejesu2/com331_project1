@@ -46,6 +46,7 @@ h2 {
 
 h3 {
   font-weight: bold;
+  color: black;
   font-size: px-to-em(20px);
   line-height: px-to-em(22px,20px);
 }
@@ -75,8 +76,8 @@ ul {
 }
 
 li {
-  padding-left: 2%;
-  padding-top: 2%;
+  padding-left: 1%;
+  padding-top: 1%;
   line-height: px-to-em(24px,18px);
   background-color: #696969;
   border-radius: px-to-em(10px);
@@ -88,24 +89,60 @@ li {
 ul.info{
   padding-left: 3%;
   font-size: px-to-em(18px);
+  padding-top: 1%;
+  line-height: px-to-em(24px,18px);
+  border-radius: px-to-em(10px);
+  margin: px-to-em(5px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
-
-ul.controls{
-  text-align: left;
-
+article {
+  padding: px-to-em(15px);
 }
 
 footer {
   line-height: px-to-em(28px);
   text-align: right;
   font-weight: bold;
+  background-color: #DCDCDC;
 }
 
+li.actions, li#back, li#error{
+  background-color: #DCDCDC;
+}
+
+li#error {
+  font-size: px-to-em(20px);
+  border-radius: 0.25em;
+  padding: 0.25em 0.4em;
+  list-style: square;
+  list-style-position: inside;
+}
+
+ li#back{
+   text-align: left;
+ }
+
+ p {
+   padding-top: 2%;
+ }
 
 
 /* Layout Styles (Usually Landmark ID Selectors) */
-
+.controls a,
+p a {
+  border-radius: 0.25em;
+  padding: 0.25em 0.4em;
+  color: #DCDCDC;
+  background-color: #001f3f;
+}
+.controls a:hover,
+p a:hover,
+input[type="submit"]:hover {
+  background-color: white;
+  color: purple;
+}
 
 /* Modular Styles (Repeating Class Selectors) */
 
