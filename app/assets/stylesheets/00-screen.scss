@@ -167,6 +167,9 @@ input[type="submit"]:hover {
   html {
     font-size: px-to-em(24px,16px); /* 24 / 16 = */
   }
+  h1{
+    font-size: px-to-em(52px);
+  }
   body {
     padding: 4%
   }
