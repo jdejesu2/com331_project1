@@ -31,14 +31,14 @@ body {
 }
 
 h1 {
-  font-size: px-to-em(48px);
+  font-size: px-to-em(54px);
   line-height: px-to-em(64px,48px); /* 28 * 2 = 48 */
   //background-color: black;
   //color: white;
 }
 
 h2 {
-  font-size: px-to-em(28px);
+  font-size: px-to-em(36px);
   line-height: px-to-em(30px,28px);
   padding-top: px-to-em(16px,18px);
   padding-bottom: px-to-em(16px,18px);
@@ -47,7 +47,7 @@ h2 {
 h3 {
   font-weight: bold;
   color: black;
-  font-size: px-to-em(20px);
+  font-size: px-to-em(30px);
   line-height: px-to-em(22px,20px);
 }
 
@@ -122,6 +122,7 @@ li#error {
 
  li#back{
    text-align: left;
+   font-size: px-to-em(20px);
  }
 
  p {
@@ -130,6 +131,10 @@ li#error {
 
 p.byline{
   color: black;
+}
+
+ul.controls#index{
+  font-size: px-to-em(20px);
 }
 
 /* Layout Styles (Usually Landmark ID Selectors) */
@@ -152,13 +157,29 @@ input[type="submit"]:hover {
 
 /* State Styles (JavaScript-Dependent Styles, Media Queries) */
 
-@media screen and (min-width: 380px) {
-
+@media screen and (min-width: 360px) {
+  html {
+    font-size: px-to-em(24px,16px); /* 24 / 16 = */
+  }
+  body {
+    padding: 4%
+  }
 
 }
 @media screen and (min-width: 540px) {
-
+  html {
+      font-size: px-to-em(26px,16px);
+  }
+  body {
+    padding: 3%
+  }
 }
 @media screen and (min-width: 920px) {
+  html {
+      font-size: px-to-em(28px,16px);
+  }
+  body {
+    padding: 2%
+  }
 
 }
