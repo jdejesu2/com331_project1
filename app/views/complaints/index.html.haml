@@ -9,9 +9,7 @@
       %article
         %h3= complaint.description
         %ul.info
-          %ul= complaint.date
-          %ul= complaint.department
-          %ul= complaint.location
+          %ul= "Date: #{complaint.date}"
 
         %ul.controls#index
-          %ul= link_to 'Show', complaint
+          %ul= link_to 'Details', complaint
