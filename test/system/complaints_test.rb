@@ -12,9 +12,16 @@ class ComplaintsTest < ApplicationSystemTestCase
 
   test "creating a Complaint" do
     visit complaints_url
-    click_on "New Complaint"
+    #click_on "New Complaint"
 
-    click_on "Create Complaint"
+    click_on "Create New Complaint"
+
+    fill_in "Date", with: @complaint.date
+    select "Location", with: @complaint.location
+    fill_in "Department", with: @complaint.department
+    fill_in "Description", with: @complaint.description
+    fill_in "Reporter", with: @complaint.reporter
+    click_on "Save"
 
     assert_text "Complaint was successfully created"
     click_on "Back"
