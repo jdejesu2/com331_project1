@@ -35,8 +35,8 @@ Reporter.destroy_all
 
 Complaint.create(
   [
-    { date: 20190115, location: 'Pritzker', department: 'Maintenance', description: 'The bathroom on the third floor for the women is broken', reporter: @Wenwen },
-    { date: 20190120, location: 'Perlstein', department: 'Maintenance', description: 'The table in Room 104 is broken', reporter: @Jiayu },
-    { date: 20190214, location: 'MSV', department: 'Technology', description: 'The printer is out of toner', reporter: @Jessica }
+    { date: 2019-01-15, location: 'Pritzker', department: 'Maintenance', description: 'The bathroom on the third floor for the women is broken', reporter: @Wenwen },
+    { date: 2019-01-20, location: 'Perlstein', department: 'Maintenance', description: 'The table in Room 104 is broken', reporter: @Jiayu },
+    { date: 2019-02-14, location: 'MSV', department: 'Technology', description: 'The printer is out of toner', reporter: @Jessica }
   ]
 )

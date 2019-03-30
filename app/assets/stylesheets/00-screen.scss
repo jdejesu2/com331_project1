@@ -51,8 +51,14 @@ h3 {
   line-height: px-to-em(22px,20px);
 }
 
-
 input {
+  background: white;
+  box-sizing: border-box;
+  line-height: px-to-em(24px,18px);
+  padding: px-to-em(16px,18px);
+}
+
+select{
   background: white;
   box-sizing: border-box;
   line-height: px-to-em(24px,18px);
