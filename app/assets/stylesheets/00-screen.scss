@@ -97,6 +97,7 @@ ul.info{
   padding-left: 3%;
   font-size: px-to-em(18px);
   padding-top: 1%;
+  padding-bottom: 1%;
   line-height: px-to-em(24px,18px);
   border-radius: px-to-em(10px);
   margin: px-to-em(5px);
@@ -121,8 +122,8 @@ li.actions, li#back, li#error{
 
 li#error {
   font-size: px-to-em(20px);
-  border-radius: 0.25em;
-  padding: 0.25em 0.4em;
+  border-radius: 0.2em;
+  padding: 0.2em 0.4em;
   list-style: square;
   list-style-position: inside;
 }
@@ -147,8 +148,8 @@ ul.controls#index{
 /* Layout Styles (Usually Landmark ID Selectors) */
 .controls a,
 p a {
-  border-radius: 0.25em;
-  padding: 0.25em 0.4em;
+  border-radius: 0.2em;
+  padding: 0.2em 0.4em;
   color: #DCDCDC;
   background-color: #001f3f;
 }
