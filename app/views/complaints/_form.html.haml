@@ -12,12 +12,12 @@
       = f.date_field :date
     %li
       = f.label :location, "Location"
-      = f.select :location, ['Stuart', 'Keating', 'Kaplan', 'Pritzker', 'Engineering',
+      = f.select :location, [' ', 'Stuart', 'Keating', 'Kaplan', 'Pritzker', 'Engineering',
       'Alumni', 'Hermann', 'MSV', 'SSV', 'MTCC', 'Perlstein', 'Wishnick', 'Siegel', 'Galvin', 'Crown', 'IIT-Tower' ]
 
     %li
       = f.label :department, "Department for complaint"
-      = f.select :department, ['Maintenance', 'Technology']
+      = f.select :department, [' ', 'Maintenance', 'Technology']
     %li
       = f.label :description, "Description"
       = f.text_area :description
