@@ -14,6 +14,4 @@ class ComplaintTest < ActiveSupport::TestCase
     assert @bathroom.valid?
   end
 
-
-
 end
