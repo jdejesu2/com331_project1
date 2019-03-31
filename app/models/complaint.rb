@@ -19,4 +19,10 @@ class Complaint < ApplicationRecord
     self.reporter ? self.reporter.a_number : nil
   end
 
+  #def validate(record)
+  #unless Reporter.find_by_a_number(record.a_number)
+    #record.errors[:a_number] << 'Student ID is missing from database'
+    #end
+  #end
+
 end
