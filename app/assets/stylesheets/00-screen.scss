@@ -24,6 +24,7 @@ html {
   color: $primary_color;
   line-height: px-to-em(28px);
   background-color: #DCDCDC;
+  font-family: "Arial Narrow", serif;
 }
 
 body {
@@ -31,31 +32,38 @@ body {
 }
 
 h1 {
-  font-size: px-to-em(48px);
+  font-size: px-to-em(54px);
   line-height: px-to-em(64px,48px); /* 28 * 2 = 48 */
   //background-color: black;
   //color: white;
 }
 
 h2 {
-  font-size: px-to-em(28px);
+  font-size: px-to-em(36px);
   line-height: px-to-em(30px,28px);
   padding-top: px-to-em(16px,18px);
   padding-bottom: px-to-em(16px,18px);
 }
 
 h3 {
-  font-size: px-to-em(20px);
+  font-weight: bold;
+  color: black;
+  font-size: px-to-em(28px);
   line-height: px-to-em(22px,20px);
 }
-
 
 input {
   background: white;
   box-sizing: border-box;
   line-height: px-to-em(24px,18px);
   padding: px-to-em(16px,18px);
+}
 
+select{
+  background: white;
+  box-sizing: border-box;
+  line-height: px-to-em(24px,18px);
+  padding: px-to-em(16px,18px);
 }
 
 label,
@@ -70,24 +78,119 @@ form li {
 }
 
 ul {
-  padding-bottom: px-to-em(16px,18px);
   line-height: px-to-em(24px,18px);
   list-style: none;
 }
 
+li {
+  padding-left: 1%;
+  padding-top: 1%;
+  line-height: px-to-em(24px,18px);
+  background-color: #696969;
+  border-radius: px-to-em(10px);
+  margin: px-to-em(5px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul.info{
+  padding-left: 3%;
+  font-size: px-to-em(18px);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  line-height: px-to-em(24px,18px);
+  border-radius: px-to-em(10px);
+  margin: px-to-em(5px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+article {
+  padding: px-to-em(15px);
+}
 
 footer {
   line-height: px-to-em(28px);
   text-align: right;
   font-weight: bold;
+  background-color: #DCDCDC;
 }
 
+li.actions, li#back, li#error{
+  background-color: #DCDCDC;
+}
 
+li#error {
+  font-size: px-to-em(20px);
+  border-radius: 0.2em;
+  padding: 0.2em 0.4em;
+  list-style: square;
+  list-style-position: inside;
+}
+
+ li#back{
+   text-align: left;
+   font-size: px-to-em(20px);
+ }
+
+ p {
+   padding-top: 2%;
+ }
+
+p.byline{
+  color: black;
+}
+
+ul.controls#index{
+  font-size: px-to-em(20px);
+}
 
 /* Layout Styles (Usually Landmark ID Selectors) */
-
+.controls a,
+p a {
+  border-radius: 0.2em;
+  padding: 0.2em 0.4em;
+  color: #DCDCDC;
+  background-color: #001f3f;
+}
+.controls a:hover,
+p a:hover,
+input[type="submit"]:hover {
+  background-color: white;
+  color: purple;
+}
 
 /* Modular Styles (Repeating Class Selectors) */
 
 
 /* State Styles (JavaScript-Dependent Styles, Media Queries) */
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: px-to-em(24px,16px); /* 24 / 16 = */
+  }
+  h1{
+    font-size: px-to-em(52px);
+  }
+  body {
+    padding: 4%
+  }
+
+}
+@media screen and (min-width: 540px) {
+  html {
+      font-size: px-to-em(26px,16px);
+  }
+  body {
+    padding: 3%
+  }
+}
+@media screen and (min-width: 920px) {
+  html {
+      font-size: px-to-em(28px,16px);
+  }
+  body {
+    padding: 2%
+  }
+
+}

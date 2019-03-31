@@ -1,10 +1,10 @@
 = form_for @complaint do |f|
   - if @complaint.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@complaint.errors.count, "error")} prohibited this complaint from being saved:"
+      %h3= "#{pluralize(@complaint.errors.count, "error")} prohibited this complaint from being saved:"
       %ul
         - @complaint.errors.full_messages.each do |message|
-          %li= message
+          %li#error= message
 
   %ol.inputs
     %li
@@ -12,10 +12,12 @@
       = f.date_field :date
     %li
       = f.label :location, "Location"
-      = f.text_field :location
+      = f.select :location, [' ', 'Stuart', 'Keating', 'Kaplan', 'Pritzker', 'Engineering',
+      'Alumni', 'Hermann', 'MSV', 'SSV', 'MTCC', 'Perlstein', 'Wishnick', 'Siegel', 'Galvin', 'Crown', 'IIT-Tower' ]
+
     %li
       = f.label :department, "Department for complaint"
-      = f.text_field :department
+      = f.select :department, [' ', 'Maintenance', 'Technology']
     %li
       = f.label :description, "Description"
       = f.text_area :description

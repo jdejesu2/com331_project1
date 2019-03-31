@@ -9,9 +9,11 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %body
+
       %header#header
         %h1 IIT Complaints
-        %p.tagline Here are all of your complaints!
+        %p.tagline We are here to listen!
         = yield
+
     %footer#footer
       %small by Jessica DeJesus
