@@ -17,10 +17,10 @@ class ComplaintsTest < ApplicationSystemTestCase
     click_on "Create New Complaint"
 
     fill_in "Date", with: @complaint.date
-    select "Location", with: @complaint.location
-    fill_in "Department", with: @complaint.department
+    select @complaint.location, from: 'Location'
+    select @complaint.department, from: 'Department'
     fill_in "Description", with: @complaint.description
-    fill_in "Reporter", with: @complaint.reporter
+    fill_in "Reporter", with: @complaint.person_number
     click_on "Save"
 
     assert_text "Complaint was successfully created"
